@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta: Salud Mental de Jóvenes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://placehold.co/60x60/d1e2e3/3e736a?text=LOGO" alt="Logo de Conecta" class="h-10 w-10 rounded-full">
+                <span class="text-xl font-bold text-gray-900">Conecta</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#inicio" class="text-gray-600 hover:text-cyan-700 font-semibold">Inicio</a>
+                <a href="#acerca" class="text-gray-600 hover:text-cyan-700 font-semibold">Acerca de</a>
+                <a href="#actividades" class="text-gray-600 hover:text-cyan-700 font-semibold">Actividades</a>
+                <a href="#recursos" class="text-gray-600 hover:text-cyan-700 font-semibold">Recursos</a>
+                <a href="#contacto" class="text-gray-600 hover:text-cyan-700 font-semibold">Contacto</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-2 shadow-md rounded-lg mx-4">
+            <a href="#inicio" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg font-semibold">Inicio</a>
+            <a href="#acerca" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg font-semibold">Acerca de</a>
+            <a href="#actividades" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg font-semibold">Actividades</a>
+            <a href="#recursos" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg font-semibold">Recursos</a>
+            <a href="#contacto" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg font-semibold">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="relative bg-cyan-700 text-white py-16 md:py-32 overflow-hidden rounded-b-3xl">
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-4">
+                    Conecta: Ciencia Ciudadana y Salud Mental
+                </h1>
+                <p class="text-lg sm:text-xl md:text-2xl font-light mb-8">
+                    Un proyecto para jóvenes de 14 a 17 años que promueve el bienestar emocional a través de la ciencia.
+                </p>
+                <a href="#acerca" class="inline-block bg-white text-cyan-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300">
+                    Saber Más
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- About Section -->
+        <section id="acerca" class="mb-16">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-center text-cyan-700 mb-8">Acerca del Proyecto</h2>
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-12">
+                    <div class="lg:w-1/2 mb-8 lg:mb-0">
+                        <img src="https://placehold.co/600x400/3e736a/fff?text=Ciencia+y+Salud+Mental" alt="Ciencia y Salud Mental" class="rounded-2xl shadow-lg w-full h-auto">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <p class="text-lg mb-4 leading-relaxed">
+                            "Conecta" es una iniciativa dedicada a empoderar a los jóvenes en su camino hacia el bienestar mental. A través de metodologías de **ciencia ciudadana**, buscamos crear una comunidad activa donde los participantes no solo aprendan sobre salud mental, sino que también contribuyan a la investigación y el desarrollo de recursos.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            Creemos firmemente que la colaboración y el conocimiento son herramientas poderosas para desmitificar la salud mental y construir un futuro más resiliente para la juventud.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="actividades" class="mb-16">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-center text-cyan-700 mb-8">Nuestras Actividades</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-md transition-transform transform hover:scale-105">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <svg class="w-10 h-10 text-cyan-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path>
+                            </svg>
+                            <h3 class="text-xl font-bold text-gray-900">Talleres Interactivos</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Talleres dinámicos sobre manejo del estrés, mindfulness, y resiliencia.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-md transition-transform transform hover:scale-105">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <svg class="w-10 h-10 text-cyan-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path>
+                            </svg>
+                            <h3 class="text-xl font-bold text-gray-900">Investigación Comunitaria</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Participa en estudios y encuestas para entender mejor la salud mental juvenil.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-md transition-transform transform hover:scale-105">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <svg class="w-10 h-10 text-cyan-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path>
+                            </svg>
+                            <h3 class="text-xl font-bold text-gray-900">Foros y Grupos de Apoyo</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Espacios seguros para compartir experiencias y conectar con otros jóvenes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="recursos" class="mb-16">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-center text-cyan-700 mb-8">Recursos Útiles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-6 rounded-2xl shadow-md bg-gray-50">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Guía de Bienestar Mental</h3>
+                        <p class="text-gray-600 mb-4">
+                            Una guía completa con técnicas de relajación, manejo de emociones y consejos prácticos.
+                        </p>
+                        <a href="#" class="text-cyan-600 font-semibold hover:underline">Descargar Guía &rarr;</a>
+                    </div>
+                    <div class="p-6 rounded-2xl shadow-md bg-gray-50">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Herramientas Interactivas</h3>
+                        <p class="text-gray-600 mb-4">
+                            Accede a herramientas digitales para el seguimiento de tu estado de ánimo y la práctica de la atención plena.
+                        </p>
+                        <a href="#" class="text-cyan-600 font-semibold hover:underline">Ver Herramientas &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-center text-cyan-700 mb-8">Únete a Conecta</h2>
+                <p class="text-center text-lg mb-8 max-w-2xl mx-auto">
+                    Si te apasiona la ciencia y quieres ser parte de una comunidad que se preocupa por la salud mental, no dudes en contactarnos.
+                </p>
+                <form class="max-w-xl mx-auto space-y-6">
+                    <div>
+                        <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-cyan-500 focus:border-cyan-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-cyan-500 focus:border-cyan-500">
+                    </div>
+                    <div>
+                        <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-cyan-500 focus:border-cyan-500"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="w-full md:w-auto inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-full shadow-lg text-white bg-cyan-700 hover:bg-cyan-800 transition duration-300">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-16 rounded-t-3xl">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Conecta. Todos los derechos reservados.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="hover:text-white">Política de Privacidad</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="hover:text-white">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
